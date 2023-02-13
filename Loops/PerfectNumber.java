@@ -6,8 +6,8 @@ class PerfectNumber {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int number,count = 1;
-        int sum=0;
+        int number, count = 1;
+        int sum = 0;
 
         System.out.println("Enter the number");
         number = sc.nextInt();
