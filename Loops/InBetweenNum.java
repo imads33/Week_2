@@ -11,19 +11,19 @@ class InBetweenNum{
         stop=sc.nextInt();
         
         if(start<stop){
-	       while(start<=stop){
+            while(start <= stop){
 		      System.out.println(start);
 		      start=start+1;
 		  }
         }
-        else if{
+        else if(start>stop){
 	       while(start>=stop){
 		      System.out.println(start);
 		      start=start-1;
 		  }
         }
         else{
-            print("Both are same");
+            System.out.println("Both are same");
         }
     }
 }
