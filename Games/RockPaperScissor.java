@@ -9,31 +9,31 @@ class RockPaperScissor {
         char person, computer;
 
         // Ask user to enter values
+        System.out.println("Enter s:Scissor p:Paper r:Rock ");
         System.out.println("Computer : ");
-        computer = sc.next();
+        computer = sc.next().charAt(0);
         System.out.println("Person : ");
-        person = sc.next();
+        person = sc.next().charAt(0);
 
-        if (person == p && computer == s) {
+        if (person == 'p' && computer == 's') {
             System.out.println("Winner Computer");
-        } else if (person == s && computer == p) {
+        } else if (person == 's' && computer == 'p') {
             System.out.println("Winner Person");
         }
 
-        else if (person == r && computer == p) {
+        else if (person == 'r' && computer == 'p') {
             System.out.println("Winner computer");
-        } else if (person == p && computer == r) {
+        } else if (person == 'p' && computer == 'r') {
             System.out.println("Winner Person");
         }
 
-        else if (person == s && computer == r) {
+        else if (person == 's' && computer == 'r') {
             System.out.println("Winner Computer");
-        } else if (person == r && computer == s) {
+        } else if (person == 'r' && computer == 's') {
             System.out.println("Winner Person");
         } else {
             System.out.println("Match Tie!");
 
         }
-
     }
 }
