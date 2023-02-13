@@ -16,7 +16,7 @@ class PerfectNumber {
             if (number % count == 0) {
                 sum = sum + count;
             }
-            count += count;
+            count = count + 1;
         }
 
         if (sum != number) {

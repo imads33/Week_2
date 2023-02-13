@@ -6,7 +6,7 @@ class EvenNumbers {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int number = 0;
+        int number = 10;
 
         while (number >= 1) {
             if (number % 2 == 0) {
