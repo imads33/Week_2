@@ -7,9 +7,9 @@ class Operations {
         int a, b;
         System.out.println("Enter Two values");
         a = s.nextInt();
-        b=s.nextInt();
+        b = s.nextInt();
 
-       // Sum of two Numbers
+        // Sum of two Numbers
         System.out.println("Sum is :" + (a + b));
 
         // Substraction of two Numbers
