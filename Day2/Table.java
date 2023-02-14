@@ -11,9 +11,8 @@ class Table {
         System.out.println("Enter the number to print table");
         number = sc.nextInt();
 
-        while (count <= 10) {
+        for(count=0;count<=10;count++) {
             System.out.println(number + " * " + count + " = " + (number * count));
-            count += 1;
         }
     }
 }
