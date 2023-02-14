@@ -9,14 +9,14 @@ class Factorial {
         System.out.println("Enter the number");
         number = s.nextInt();
 
-        // while (number >= 1) {
-        // factorial = factorial * number;
-        // number--;
-        // }
-
-        for (; number >= 1; number--) {
+        while (number >= 1) {
             factorial = factorial * number;
+            number--;
         }
+
+        // for (; number >= 1; number--) {
+        // factorial = factorial * number;
+        // }
         System.out.println("Factorial of given number is " + factorial);
     }
 }
