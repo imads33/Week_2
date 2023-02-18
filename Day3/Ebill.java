@@ -6,22 +6,26 @@ class Ebill {
         Scanner sc = new Scanner(System.in);
 
         // Declaring vaiables
-        float unit;
+        float unit, gst = 0;
         float bill;
 
         // Ask user to enter values
         System.out.println("Enter number : ");
-        unit = sc.nextInt();
+        unit = sc.nextFloat();
 
         if (unit <= 50) {
             bill = unit * 0.50f;
-        } else if (unit > 50 && unit <= 150) {
+        } else if (unit <= 150) {
             bill = unit * 1.23f;
-        } else if (unit > 150 && unit <= 250) {
+        } else if (unit <= 250) {
             bill = unit * 1.90f;
         } else {
             bill = unit * 2.34f;
         }
-        System.out.println("Bill is : " + bill);
+        gst = (10 * bill) / 100;
+        System.out.println("Bill per Unit is : " + bill);
+        System.out.println("GST is : " + gst);
+        bill = bill + gst;
+        System.out.println("Total Bill is : " + bill);
     }
 }
