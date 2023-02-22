@@ -12,13 +12,8 @@ class Numbers {
         while (number != 0) {
             rem = number % 10;
             sum = sum + rem;
-            number = number / 10;
-        }
-        
-        while (number1 != 0) {
-            rem = number1 % 10;
             product = product * rem;
-            number1 = number1 / 10;
+            number = number / 10;
         }
 
         diffrence=product-sum;

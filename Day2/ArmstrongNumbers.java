@@ -1,4 +1,4 @@
-//  ArmStrong numbers between 1 to 100
+//  ArmStrong numbers between 1 to 1000
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ class ArmstrongNumbers {
 
         int number = 1;
 
-        while (number <= 100) {
+        while (number <= 1000) {
            int count = 0, digit = 0, temp1, temp2, sum = 0;
             temp1 = number;
             temp2 = number;

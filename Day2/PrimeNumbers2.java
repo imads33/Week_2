@@ -18,6 +18,5 @@ class PrimeNumbers2 {
                     System.out.println(number);
             }
         }
-
     }
 }

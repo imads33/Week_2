@@ -65,7 +65,6 @@ class BankProcess {
 
     public void withdraw() {
         totalATM_amount = (avlable500 * 500) + (avlable200 * 200) + (avlable100 * 100);
-        success=false;
 
         if (transactionLimit != 3) {
             System.out.println("Available :100\t200\t500");
@@ -81,10 +80,10 @@ class BankProcess {
                                 if (success == true) {
                                     transactionLimit++;
                                     balance = balance - temp2;
-                                    successMessage();
                                     avlable500 = avlable500 - fiveHundreds;
                                     avlable200 = avlable200 - twoHundreds;
                                     avlable100 = avlable100 - Hundreds;
+                                    successMessage();
                                 } else {
                                     System.out.println("Transaction failed ! Try different amount");
                                     withdraw();
@@ -197,7 +196,7 @@ class BankProcess {
     public void count500() {
         fiveHundreds = withdrawalAmount / 500;
         withdrawalAmount = withdrawalAmount % 500;
-        fiveHundreds += fiveHundreds;
+        // fiveHundreds += fiveHundreds;
         success = true;
     }
 
@@ -205,7 +204,7 @@ class BankProcess {
     public void count200() {
         twoHundreds = withdrawalAmount / 200;
         withdrawalAmount = withdrawalAmount % 200;
-        twoHundreds += twoHundreds;
+        // twoHundreds += twoHundreds;
         success = true;
     }
 
